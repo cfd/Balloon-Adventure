@@ -23,7 +23,7 @@
     [self startDeviceMotion];
     birdSpawnTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(makeBirds) userInfo:nil repeats:YES];
     cloudSpawnTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(makeClouds) userInfo:nil repeats:YES];
-    distanceTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(countScore) userInfo:nil repeats:YES];
+    distanceTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(countScore) userInfo:nil repeats:YES];
     deadTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(checkDead) userInfo:nil repeats:YES];
    
 }
@@ -40,7 +40,7 @@
 
 -(void)countScore{
     //NSLog(@"score: %f", metersTravelled);
-    metersTravelled+=0.1;
+    metersTravelled+=0.01;
     scoreLabel.text = [NSString stringWithFormat: @"%.2fm", metersTravelled];
 }
 
@@ -281,15 +281,15 @@
                  dead = NO;
                  NSLog(@"doing dead thing");
                  [self.motionManager stopAccelerometerUpdates];
-                 UIImageView *deadBalloon =[[UIImageView alloc] initWithFrame:CGRectMake(balloon.center.x,balloon.center.y,20,40)];
+                 UIImageView *deadBalloon =[[UIImageView alloc] initWithFrame:CGRectMake(balloon.frame.origin.x, balloon.frame.origin.y,20,40)];
                  [balloon removeFromSuperview];
                  deadBalloon.image = [UIImage imageNamed:@"deadballoon.png"];
                  [self.view addSubview:deadBalloon];
                  scoreLabel.hidden = YES;
                  
                  
-                 [UIView animateWithDuration:3.f
-                                       delay:0.0f
+                 [UIView animateWithDuration:0.8f
+                                       delay:0.2f
                                      options:UIViewAnimationCurveLinear
                                   animations:^{
                                       deadBalloon.frame = CGRectMake(balloon.center.x, self.view.frame.size.height, deadBalloon.frame.size.width, deadBalloon.frame.size.height);
