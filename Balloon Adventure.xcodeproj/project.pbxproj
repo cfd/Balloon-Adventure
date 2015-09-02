@@ -12,6 +12,10 @@
 		8343B02F1B8F2D7F003FE678 /* backarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B02E1B8F2D7F003FE678 /* backarrow.png */; };
 		8343B0311B8F3603003FE678 /* startArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B0301B8F3603003FE678 /* startArrow.png */; };
 		8343B0331B8F3926003FE678 /* playArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B0321B8F3926003FE678 /* playArrow.png */; };
+		8343B0371B96AD88003FE678 /* PENGUAPPS.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B0361B96AD88003FE678 /* PENGUAPPS.png */; };
+		8343B0391B96ADE9003FE678 /* PENGUAPPStp.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B0381B96ADE9003FE678 /* PENGUAPPStp.png */; };
+		8343B03C1B9714D4003FE678 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8343B03B1B9714D4003FE678 /* HomeViewController.m */; };
+		8343B03E1B9718C0003FE678 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B03D1B9718C0003FE678 /* bg.png */; };
 		837907BF1B8D577600D2836D /* balloonright.png in Resources */ = {isa = PBXBuildFile; fileRef = 837907BD1B8D577600D2836D /* balloonright.png */; };
 		837907C01B8D577600D2836D /* balloonleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 837907BE1B8D577600D2836D /* balloonleft.png */; };
 		837907C21B8D5FD200D2836D /* birdwingdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 837907C11B8D5FD200D2836D /* birdwingdown.png */; };
@@ -49,6 +53,11 @@
 		8343B02E1B8F2D7F003FE678 /* backarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backarrow.png; sourceTree = "<group>"; };
 		8343B0301B8F3603003FE678 /* startArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startArrow.png; sourceTree = "<group>"; };
 		8343B0321B8F3926003FE678 /* playArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playArrow.png; sourceTree = "<group>"; };
+		8343B0361B96AD88003FE678 /* PENGUAPPS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PENGUAPPS.png; sourceTree = "<group>"; };
+		8343B0381B96ADE9003FE678 /* PENGUAPPStp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PENGUAPPStp.png; sourceTree = "<group>"; };
+		8343B03A1B9714D4003FE678 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		8343B03B1B9714D4003FE678 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8343B03D1B9718C0003FE678 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		837907BD1B8D577600D2836D /* balloonright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloonright.png; sourceTree = "<group>"; };
 		837907BE1B8D577600D2836D /* balloonleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloonleft.png; sourceTree = "<group>"; };
 		837907C11B8D5FD200D2836D /* birdwingdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdwingdown.png; sourceTree = "<group>"; };
@@ -120,6 +129,8 @@
 				8395A9CB1B8C3D8C004D4A08 /* Main.storyboard */,
 				8395A9C21B8C3D8C004D4A08 /* AppDelegate.h */,
 				8395A9C31B8C3D8C004D4A08 /* AppDelegate.m */,
+				8343B03A1B9714D4003FE678 /* HomeViewController.h */,
+				8343B03B1B9714D4003FE678 /* HomeViewController.m */,
 				8395A9C81B8C3D8C004D4A08 /* ViewController.h */,
 				8395A9C91B8C3D8C004D4A08 /* ViewController.m */,
 				8395A9CE1B8C3D8C004D4A08 /* Images.xcassets */,
@@ -136,6 +147,7 @@
 				837907C91B8EBB1E00D2836D /* cloud1.png */,
 				837907CA1B8EBB1E00D2836D /* cloud2.png */,
 				837907CB1B8EBB1E00D2836D /* cloud3.png */,
+				8343B03D1B9718C0003FE678 /* bg.png */,
 				8343B02A1B8F1D7E003FE678 /* deadballoon.png */,
 				837907C51B8DD53100D2836D /* birdbackwardwingup.png */,
 				837907C61B8DD53100D2836D /* birdwingup.png */,
@@ -144,6 +156,8 @@
 				837907C31B8DCDDB00D2836D /* birdbackwardwingdown.png */,
 				837907BD1B8D577600D2836D /* balloonright.png */,
 				837907BE1B8D577600D2836D /* balloonleft.png */,
+				8343B0361B96AD88003FE678 /* PENGUAPPS.png */,
+				8343B0381B96ADE9003FE678 /* PENGUAPPStp.png */,
 				8395A9EB1B8C41AA004D4A08 /* balloon.png */,
 				8395A9BF1B8C3D8C004D4A08 /* Info.plist */,
 				8343B02C1B8F25EE003FE678 /* scorebackground.png */,
@@ -257,16 +271,19 @@
 				8395A9CD1B8C3D8C004D4A08 /* Main.storyboard in Resources */,
 				8343B02D1B8F25EE003FE678 /* scorebackground.png in Resources */,
 				837907CC1B8EBB1E00D2836D /* cloud1.png in Resources */,
+				8343B0371B96AD88003FE678 /* PENGUAPPS.png in Resources */,
 				837907C81B8DD53100D2836D /* birdwingup.png in Resources */,
 				837907C01B8D577600D2836D /* balloonleft.png in Resources */,
 				8395A9EC1B8C41AA004D4A08 /* balloon.png in Resources */,
 				837907CD1B8EBB1E00D2836D /* cloud2.png in Resources */,
+				8343B03E1B9718C0003FE678 /* bg.png in Resources */,
 				8395A9D21B8C3D8C004D4A08 /* LaunchScreen.xib in Resources */,
 				8343B0331B8F3926003FE678 /* playArrow.png in Resources */,
 				8395A9CF1B8C3D8C004D4A08 /* Images.xcassets in Resources */,
 				8343B02F1B8F2D7F003FE678 /* backarrow.png in Resources */,
 				837907C21B8D5FD200D2836D /* birdwingdown.png in Resources */,
 				8343B0311B8F3603003FE678 /* startArrow.png in Resources */,
+				8343B0391B96ADE9003FE678 /* PENGUAPPStp.png in Resources */,
 				837907C71B8DD53100D2836D /* birdbackwardwingup.png in Resources */,
 				837907BF1B8D577600D2836D /* balloonright.png in Resources */,
 			);
@@ -289,6 +306,7 @@
 				8395A9C71B8C3D8C004D4A08 /* Balloon_Adventure.xcdatamodeld in Sources */,
 				8395A9C41B8C3D8C004D4A08 /* AppDelegate.m in Sources */,
 				8395A9CA1B8C3D8C004D4A08 /* ViewController.m in Sources */,
+				8343B03C1B9714D4003FE678 /* HomeViewController.m in Sources */,
 				8395A9C11B8C3D8C004D4A08 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
