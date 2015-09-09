@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
 #import <QuartzCore/QuartzCore.h>
+#import "Score.h"
 
 @interface ViewController : UIViewController{
     IBOutlet UIImageView* balloon;
@@ -32,6 +33,8 @@
     IBOutlet UIButton* backButton;
     IBOutlet UILabel* finalScoreLabel;
     IBOutlet UILabel* metresLabel;
+    
+    NSManagedObjectContext* context;
     
 }
 

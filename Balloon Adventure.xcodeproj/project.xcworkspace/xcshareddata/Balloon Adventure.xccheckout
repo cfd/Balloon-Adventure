@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9B01ECCB-EE9E-4EF1-BDE3-42CE2244ED3A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Balloon Adventure</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>ADD7F97C14CE3350DBAA9E1BB8FB3CFE7C6922C6</key>
 		<string>https://github.com/cfd/Balloon-Adventure.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Balloon Adventure.xcodeproj/project.xcworkspace</string>
+	<string>Balloon Adventure.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>ADD7F97C14CE3350DBAA9E1BB8FB3CFE7C6922C6</key>

@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hct-no-9DX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,53 +19,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ADVENTURE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYO-OE-tW1">
-                                <rect key="frame" x="146" y="140" width="308" height="150"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVENTURE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYO-OE-tW1">
+                                <rect key="frame" x="137" y="138" width="326" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="308" id="D9s-qx-acP"/>
+                                    <constraint firstAttribute="width" constant="326" id="D9s-qx-acP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BALLOON" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaD-SN-wZR">
-                                <rect key="frame" x="16" y="64" width="568" height="150"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BALLOON" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaD-SN-wZR">
+                                <rect key="frame" x="16" y="60" width="568" height="150"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdM-yl-1LJ">
-                                <rect key="frame" x="240" y="332" width="120" height="81"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdM-yl-1LJ">
+                                <rect key="frame" x="240" y="322" width="120" height="81"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="lyO-Ud-Tox"/>
                                     <constraint firstAttribute="height" constant="81" id="pdE-lu-MYt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
-                                <state key="normal" title="PLAY" backgroundImage="bg.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="PLAY" backgroundImage="cloud1.png">
+                                    <color key="titleColor" red="0.2553362582" green="0.86297965779999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="P4X-lR-XkA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWD-12-HXd">
+                                <rect key="frame" x="334" y="421" width="120" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="XCA-YZ-OQG"/>
+                                    <constraint firstAttribute="height" constant="81" id="nN3-Na-w9r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <state key="normal" title="Music Off" backgroundImage="cloud1.png">
+                                    <color key="titleColor" red="0.2553362582" green="0.86297965779999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zem-HJ-b6G">
+                                <rect key="frame" x="146" y="421" width="120" height="81"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="30"/>
+                                <state key="normal" title="Scores" backgroundImage="cloud1.png">
+                                    <color key="titleColor" red="0.2553362582" green="0.86297965779999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2553362582" green="0.86297965779999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="VdM-yl-1LJ" firstAttribute="top" secondItem="CYO-OE-tW1" secondAttribute="bottom" constant="42" id="0zk-Pl-7PN"/>
+                            <constraint firstItem="VdM-yl-1LJ" firstAttribute="top" secondItem="CYO-OE-tW1" secondAttribute="bottom" constant="34" id="0zk-Pl-7PN"/>
                             <constraint firstItem="VdM-yl-1LJ" firstAttribute="centerX" secondItem="Mqe-VA-ngz" secondAttribute="centerX" id="287-ff-UOH"/>
                             <constraint firstItem="VdM-yl-1LJ" firstAttribute="centerX" secondItem="jaD-SN-wZR" secondAttribute="centerX" id="31p-yD-dsF"/>
-                            <constraint firstItem="VdM-yl-1LJ" firstAttribute="top" secondItem="jaD-SN-wZR" secondAttribute="bottom" constant="118" id="6j9-bf-9gW"/>
-                            <constraint firstItem="CYO-OE-tW1" firstAttribute="top" secondItem="hkv-HE-G4p" secondAttribute="bottom" constant="120" id="RSl-mO-bhO"/>
+                            <constraint firstItem="VdM-yl-1LJ" firstAttribute="top" secondItem="jaD-SN-wZR" secondAttribute="bottom" constant="112" id="6j9-bf-9gW"/>
+                            <constraint firstItem="vTn-rK-13z" firstAttribute="top" secondItem="XWD-12-HXd" secondAttribute="bottom" constant="98" id="8Ko-FD-08q"/>
+                            <constraint firstItem="XWD-12-HXd" firstAttribute="trailing" secondItem="CYO-OE-tW1" secondAttribute="trailing" constant="-9" id="AF4-uV-Fsu"/>
+                            <constraint firstItem="Zem-HJ-b6G" firstAttribute="top" secondItem="XWD-12-HXd" secondAttribute="top" id="QQp-x6-a5q"/>
+                            <constraint firstItem="CYO-OE-tW1" firstAttribute="top" secondItem="hkv-HE-G4p" secondAttribute="bottom" constant="118" id="RSl-mO-bhO"/>
+                            <constraint firstItem="Zem-HJ-b6G" firstAttribute="leading" secondItem="CYO-OE-tW1" secondAttribute="leading" constant="9" id="Yea-ej-hJm"/>
                             <constraint firstItem="jaD-SN-wZR" firstAttribute="leading" secondItem="Mqe-VA-ngz" secondAttribute="leadingMargin" id="Zx8-VN-FGj"/>
-                            <constraint firstItem="jaD-SN-wZR" firstAttribute="top" secondItem="hkv-HE-G4p" secondAttribute="bottom" constant="44" id="ewT-I8-o60"/>
+                            <constraint firstItem="Zem-HJ-b6G" firstAttribute="firstBaseline" secondItem="XWD-12-HXd" secondAttribute="baseline" constant="1" id="dni-xF-aaO"/>
+                            <constraint firstItem="jaD-SN-wZR" firstAttribute="top" secondItem="hkv-HE-G4p" secondAttribute="bottom" constant="40" id="ewT-I8-o60"/>
+                            <constraint firstItem="Zem-HJ-b6G" firstAttribute="baseline" secondItem="XWD-12-HXd" secondAttribute="firstBaseline" constant="1" id="foH-sK-vRQ"/>
+                            <constraint firstItem="XWD-12-HXd" firstAttribute="leading" secondItem="Zem-HJ-b6G" secondAttribute="trailing" constant="68" id="otw-tz-K5N"/>
+                            <constraint firstItem="XWD-12-HXd" firstAttribute="top" secondItem="VdM-yl-1LJ" secondAttribute="bottom" constant="18" id="rBp-xK-ocn"/>
                             <constraint firstItem="CYO-OE-tW1" firstAttribute="centerX" secondItem="jaD-SN-wZR" secondAttribute="centerX" id="sTt-Dy-53h"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNq-cF-SGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-417" y="375"/>
+            <point key="canvasLocation" x="-401" y="466"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -77,7 +107,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="balloon.png" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-IZ-Ejr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon.png" translatesAutoresizingMaskIntoConstraints="NO" id="3v4-IZ-Ejr">
                                 <rect key="frame" x="290" y="370" width="20" height="40"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d3-BV-F94">
@@ -136,12 +166,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9d3-BV-F94" secondAttribute="bottom" constant="50" id="tmY-y2-p7e"/>
                             <constraint firstItem="C1i-db-m5s" firstAttribute="leading" secondItem="9II-FC-ZEE" secondAttribute="leading" id="vV3-OZ-Cvn"/>
                             <constraint firstItem="cso-C5-TZe" firstAttribute="centerX" secondItem="9II-FC-ZEE" secondAttribute="centerX" id="xqA-DY-Wj0"/>
+                            <constraint firstItem="3v4-IZ-Ejr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yts-U0-d8e"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="cso-C5-TZe" id="UBW-tC-mqG"/>
                         <outlet property="balloon" destination="3v4-IZ-Ejr" id="0lq-Kg-Aj4"/>
                         <outlet property="finalScoreLabel" destination="9II-FC-ZEE" id="IwQ-cC-dSK"/>
+                        <outlet property="horizontalBalloonConstraint" destination="yts-U0-d8e" id="mXS-gW-pfu"/>
                         <outlet property="metresLabel" destination="C1i-db-m5s" id="Mmy-SP-pTH"/>
                         <outlet property="scoreLabel" destination="9d3-BV-F94" id="uFB-Se-UWG"/>
                     </connections>
@@ -153,6 +185,6 @@
     <resources>
         <image name="backarrow.png" width="173" height="225"/>
         <image name="balloon.png" width="20" height="40"/>
-        <image name="bg.png" width="400" height="400"/>
+        <image name="cloud1.png" width="100" height="60"/>
     </resources>
 </document>

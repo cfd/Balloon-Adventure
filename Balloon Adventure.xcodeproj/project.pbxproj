@@ -16,6 +16,8 @@
 		8343B0391B96ADE9003FE678 /* PENGUAPPStp.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B0381B96ADE9003FE678 /* PENGUAPPStp.png */; };
 		8343B03C1B9714D4003FE678 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8343B03B1B9714D4003FE678 /* HomeViewController.m */; };
 		8343B03E1B9718C0003FE678 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B03D1B9718C0003FE678 /* bg.png */; };
+		8343B0461B97578C003FE678 /* iphone6plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343B0451B97578C003FE678 /* iphone6plus.png */; };
+		8343B04C1BA070D1003FE678 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 8343B04B1BA070D1003FE678 /* Score.m */; };
 		837907BF1B8D577600D2836D /* balloonright.png in Resources */ = {isa = PBXBuildFile; fileRef = 837907BD1B8D577600D2836D /* balloonright.png */; };
 		837907C01B8D577600D2836D /* balloonleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 837907BE1B8D577600D2836D /* balloonleft.png */; };
 		837907C21B8D5FD200D2836D /* birdwingdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 837907C11B8D5FD200D2836D /* birdwingdown.png */; };
@@ -58,6 +60,9 @@
 		8343B03A1B9714D4003FE678 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		8343B03B1B9714D4003FE678 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		8343B03D1B9718C0003FE678 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		8343B0451B97578C003FE678 /* iphone6plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone6plus.png; sourceTree = "<group>"; };
+		8343B04A1BA070D1003FE678 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		8343B04B1BA070D1003FE678 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 		837907BD1B8D577600D2836D /* balloonright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloonright.png; sourceTree = "<group>"; };
 		837907BE1B8D577600D2836D /* balloonleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloonleft.png; sourceTree = "<group>"; };
 		837907C11B8D5FD200D2836D /* birdwingdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = birdwingdown.png; sourceTree = "<group>"; };
@@ -133,6 +138,8 @@
 				8343B03B1B9714D4003FE678 /* HomeViewController.m */,
 				8395A9C81B8C3D8C004D4A08 /* ViewController.h */,
 				8395A9C91B8C3D8C004D4A08 /* ViewController.m */,
+				8343B04A1BA070D1003FE678 /* Score.h */,
+				8343B04B1BA070D1003FE678 /* Score.m */,
 				8395A9CE1B8C3D8C004D4A08 /* Images.xcassets */,
 				8395A9D01B8C3D8C004D4A08 /* LaunchScreen.xib */,
 				8395A9C51B8C3D8C004D4A08 /* Balloon_Adventure.xcdatamodeld */,
@@ -153,6 +160,7 @@
 				837907C61B8DD53100D2836D /* birdwingup.png */,
 				837907C11B8D5FD200D2836D /* birdwingdown.png */,
 				8343B02E1B8F2D7F003FE678 /* backarrow.png */,
+				8343B0451B97578C003FE678 /* iphone6plus.png */,
 				837907C31B8DCDDB00D2836D /* birdbackwardwingdown.png */,
 				837907BD1B8D577600D2836D /* balloonright.png */,
 				837907BE1B8D577600D2836D /* balloonleft.png */,
@@ -234,6 +242,7 @@
 				TargetAttributes = {
 					8395A9BA1B8C3D8C004D4A08 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = J3S3H64WE2;
 					};
 					8395A9D61B8C3D8C004D4A08 = {
 						CreatedOnToolsVersion = 6.4;
@@ -266,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8343B02B1B8F1D7E003FE678 /* deadballoon.png in Resources */,
+				8343B0461B97578C003FE678 /* iphone6plus.png in Resources */,
 				837907C41B8DCDDB00D2836D /* birdbackwardwingdown.png in Resources */,
 				837907CE1B8EBB1E00D2836D /* cloud3.png in Resources */,
 				8395A9CD1B8C3D8C004D4A08 /* Main.storyboard in Resources */,
@@ -303,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8343B04C1BA070D1003FE678 /* Score.m in Sources */,
 				8395A9C71B8C3D8C004D4A08 /* Balloon_Adventure.xcdatamodeld in Sources */,
 				8395A9C41B8C3D8C004D4A08 /* AppDelegate.m in Sources */,
 				8395A9CA1B8C3D8C004D4A08 /* ViewController.m in Sources */,
@@ -434,7 +445,9 @@
 		8395A9E21B8C3D8C004D4A08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Balloon Adventure/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Balloon Adventure";
@@ -444,7 +457,9 @@
 		8395A9E31B8C3D8C004D4A08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Balloon Adventure/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Balloon Adventure";

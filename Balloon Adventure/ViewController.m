@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    AppDelegate* myApp = [UIApplication sharedApplication].delegate;
+    context = myApp.managedObjectContext;
+    
+    
     birdies = [[NSMutableArray alloc] init];
     balloonLeft = [UIImage imageNamed:@"balloonleft.png"];
     balloonRight = [UIImage imageNamed:@"balloonright.png"];
@@ -331,6 +336,24 @@
     buttonTransition.type = kCATransitionPush;
     buttonTransition.subtype = kCATransitionFromBottom;
     [backButton.layer addAnimation:buttonTransition forKey:@"push-transition"];
+    
+    
+    
+    
+    Score* newScore = [NSEntityDescription insertNewObjectForEntityForName:@"Score" inManagedObjectContext:context];
+    
+    newScore.score = [NSNumber numberWithDouble:metersTravelled];
+    
+    
+    NSError* error = nil;
+    BOOL okay = [context save:&error];
+    
+    if (!okay) {
+        printf("error: %s\n", [[error description] UTF8String]);
+    }else{
+        printf("ok :) score entered");
+        
+    }
     
     
     
